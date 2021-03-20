@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>BTS_Judgment</title>
+    <link rel="stylesheet" href="./../static/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h2>AIがBTSのメンバーを識別します</h2>
+
+    </header>
+    <div class="main">
+
+        <p>メンバーの顔写真を選択してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="送信" type="submit">
+            <br>
+            <br>
+        <!--<canvas id="preview" style="max-width:100px;"></canvas>-->
+            {% if filename %}
+                <img src="{{filename}}">
+            {% endif %}
+        </form>
+        <div class="answer">{{answer}}</div>
+    </div>
+    <!--
+    <script>
+        function previewImage(obj)
+        {
+            var fileReader = new FileReader();
+            fileReader.onload = (function() {
+                var canvas = document.getElementById('preview');
+                var ctx = canvas.getContext('2d');
+                var image = new Image();
+                image.src = fileReader.result;
+                image.onload = (function () {
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    ctx.drawImage(image, 0, 0);
+                });
+            });
+            fileReader.readAsDataURL(obj.files[0]);
+        }
+    </script>
+-->
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-position: left;
+    background-image: url("back.jpg"); 
+    background-repeat  : no-repeat;
+}
+
+.main {
+    height: 400px;
+    width: 1700px;
+}
+
+h2 {
+    padding: 1rem 2rem;
+    color: #fff;
+    background-image: -webkit-gradient(linear, right top, left top, from(#f0ace4), to(#e4b2bd));
+    background-image: -webkit-linear-gradient(right, #f0ace4 0%, #e4b2bd 100%);
+    background-image: linear-gradient(to left, #f0ace4 0%, #e4b2bd 100%);
+  }
+  
+p {
+    color: rgba(226, 58, 46, 0.829);
+    margin: 100px 0px 30px 0px;
+    text-align: center;
+}
+
+form {
+    font-weight: bold; 
+    color: rgba(226, 58, 46, 0.829);
+    text-align: center;
+}
+
+.answer {
+    color: rgba(226, 58, 46, 0.829);
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+X_test type <class 'list'>
+y_train: (739, 7)
+y_test: (318, 7)
+X_test: <class 'list'>
+ss
